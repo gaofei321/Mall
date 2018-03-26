@@ -1,0 +1,28 @@
+package com.allroot.wishMessage;
+
+import com.allroot.ebayMessage.EbayAddMemberMessageRTQThread;
+import com.allroot.ebayMessage.EbayAutoGetMessageThread;
+import com.allroot.ebayMessage.EbayReviseMyMessagesThread;
+import com.allroot.wishSynAfterSales.WishAfterSalesThread;
+
+public class WishMessageThread {
+
+	public static void main(String[] args) {
+		//下载订单
+		Thread wishAutoGetMessageThread=new Thread(new Runnable() {
+			public void run() {
+				WishAutoGetMessageThread.synWishMessages();	
+			}
+		});
+		wishAutoGetMessageThread.start();
+		//同步售后单纠纷
+		Thread wishAfterSalesThread=new Thread(new Runnable() {
+			public void run() {
+				WishAfterSalesThread.synWishAfterSales();	
+			}
+		});
+		wishAfterSalesThread.start();
+	}
+	
+	
+}

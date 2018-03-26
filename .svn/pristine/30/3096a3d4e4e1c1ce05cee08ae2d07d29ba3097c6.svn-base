@@ -1,0 +1,124 @@
+package com.allroot.entity;
+
+public class WishUser {
+	private Integer NID;
+	private String AliasName;
+	private String ShopName;
+	private String AccessToken;
+	private String LastSyncTime;
+	private Integer SyncInvertal;
+	private Integer SiteSC;
+	private Integer LocalFlag;
+	private String RefreshToken;
+	private Integer IsStop;
+	private Integer autoShip;
+	private String merchant_id;
+	private String merchant_user_id;
+	private String WishAppkey;
+	private String WishAppSecret;
+	private String UID;
+	private String AddTime;
+	public Integer getNID() {
+		return NID;
+	}
+	public void setNID(Integer nID) {
+		NID = nID;
+	}
+	public String getAliasName() {
+		return AliasName;
+	}
+	public void setAliasName(String aliasName) {
+		AliasName = aliasName;
+	}
+	public String getShopName() {
+		return ShopName;
+	}
+	public void setShopName(String shopName) {
+		ShopName = shopName;
+	}
+	public String getAccessToken() {
+		return AccessToken;
+	}
+	public void setAccessToken(String accessToken) {
+		AccessToken = accessToken;
+	}
+	public String getLastSyncTime() {
+		return LastSyncTime;
+	}
+	public void setLastSyncTime(String lastSyncTime) {
+		LastSyncTime = lastSyncTime;
+	}
+	public Integer getSyncInvertal() {
+		return SyncInvertal;
+	}
+	public void setSyncInvertal(Integer syncInvertal) {
+		SyncInvertal = syncInvertal;
+	}
+	public Integer getSiteSC() {
+		return SiteSC;
+	}
+	public void setSiteSC(Integer siteSC) {
+		SiteSC = siteSC;
+	}
+	public Integer getLocalFlag() {
+		return LocalFlag;
+	}
+	public void setLocalFlag(Integer localFlag) {
+		LocalFlag = localFlag;
+	}
+	public String getRefreshToken() {
+		return RefreshToken;
+	}
+	public void setRefreshToken(String refreshToken) {
+		RefreshToken = refreshToken;
+	}
+	public Integer getIsStop() {
+		return IsStop;
+	}
+	public void setIsStop(Integer isStop) {
+		IsStop = isStop;
+	}
+	public Integer getAutoShip() {
+		return autoShip;
+	}
+	public void setAutoShip(Integer autoShip) {
+		this.autoShip = autoShip;
+	}
+	public String getMerchant_id() {
+		return merchant_id;
+	}
+	public void setMerchant_id(String merchant_id) {
+		this.merchant_id = merchant_id;
+	}
+	public String getMerchant_user_id() {
+		return merchant_user_id;
+	}
+	public void setMerchant_user_id(String merchant_user_id) {
+		this.merchant_user_id = merchant_user_id;
+	}
+	public String getWishAppkey() {
+		return WishAppkey;
+	}
+	public void setWishAppkey(String wishAppkey) {
+		WishAppkey = wishAppkey;
+	}
+	public String getWishAppSecret() {
+		return WishAppSecret;
+	}
+	public void setWishAppSecret(String wishAppSecret) {
+		WishAppSecret = wishAppSecret;
+	}
+	public String getUID() {
+		return UID;
+	}
+	public void setUID(String uID) {
+		UID = uID;
+	}
+	public String getAddTime() {
+		return AddTime;
+	}
+	public void setAddTime(String addTime) {
+		AddTime = addTime;
+	}
+
+}

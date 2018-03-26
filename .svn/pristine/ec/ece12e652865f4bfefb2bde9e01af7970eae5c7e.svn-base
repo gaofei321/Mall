@@ -1,0 +1,850 @@
+[2017-02-24 00:13:31] select id,name,value from at_sysconfig where enable = 1 and id='SynDebug'
+[2017-02-24 00:13:32] [同步监测商品]启动成功,每天09点下载
+[2017-08-30 14:33:00] [更新关键词商品]启动成功,每天00点下载
+[2017-09-25 17:52:49] [同步ebayMessage]启动成功,每天17点下载
+[2017-09-25 17:52:50] [同步ebayMessage]本次共有[1]个店铺需下载Message,启用[1]个线程进行处理.
+[2017-09-25 17:54:08] 下载店铺[allroot]Message共16条
+[2017-09-25 17:54:08] 开始下载店铺[allroot]Message第1条
+[2017-09-25 17:54:09] 下载店铺[allroot]Message第1条主表成功
+[2017-09-25 17:54:09] 下载店铺[allroot]Message第1条细表成功
+[2017-09-25 17:54:09] 开始下载店铺[allroot]Message第2条
+[2017-09-25 17:54:09] 下载店铺[allroot]Message第2条主表成功
+[2017-09-25 17:54:09] 下载店铺[allroot]Message第2条细表成功
+[2017-09-25 17:54:09] 开始下载店铺[allroot]Message第3条
+[2017-09-25 17:54:10] 下载店铺[allroot]Message第3条主表成功
+[2017-09-25 17:54:10] 下载店铺[allroot]Message第3条细表成功
+[2017-09-25 17:54:10] 开始下载店铺[allroot]Message第4条
+[2017-09-25 17:54:11] 下载店铺[allroot]Message第4条主表成功
+[2017-09-25 17:54:11] 下载店铺[allroot]Message第4条细表成功
+[2017-09-25 17:54:11] 开始下载店铺[allroot]Message第5条
+[2017-09-25 17:54:12] 下载店铺[allroot]Message第5条主表成功
+[2017-09-25 17:54:12] 下载店铺[allroot]Message第5条细表成功
+[2017-09-25 17:54:12] 开始下载店铺[allroot]Message第6条
+[2017-09-25 17:54:14] 下载店铺[allroot]Message第6条主表成功
+[2017-09-25 17:54:14] 下载店铺[allroot]Message第6条细表成功
+[2017-09-25 17:54:14] 开始下载店铺[allroot]Message第7条
+[2017-09-25 17:54:14] 下载店铺[allroot]Message第7条主表成功
+[2017-09-25 17:54:14] 下载店铺[allroot]Message第7条细表成功
+[2017-09-25 17:54:14] 开始下载店铺[allroot]Message第8条
+[2017-09-25 17:54:15] 下载店铺[allroot]Message第8条主表成功
+[2017-09-25 17:54:15] 下载店铺[allroot]Message第8条细表成功
+[2017-09-25 17:54:15] 开始下载店铺[allroot]Message第9条
+[2017-09-25 17:54:16] 下载店铺[allroot]Message第9条主表成功
+[2017-09-25 17:54:16] 下载店铺[allroot]Message第9条细表成功
+[2017-09-25 17:54:16] 开始下载店铺[allroot]Message第10条
+[2017-09-25 17:54:17] 下载店铺[allroot]Message第10条主表成功
+[2017-09-25 17:54:17] 下载店铺[allroot]Message第10条细表成功
+[2017-09-25 17:54:17] 开始下载店铺[allroot]Message第11条
+[2017-09-25 17:54:17] 下载店铺[allroot]Message第11条主表成功
+[2017-09-25 17:54:17] 下载店铺[allroot]Message第11条细表成功
+[2017-09-25 17:54:18] 开始下载店铺[allroot]Message第12条
+[2017-09-25 17:54:18] 下载店铺[allroot]Message第12条主表成功
+[2017-09-25 17:54:18] 下载店铺[allroot]Message第12条细表成功
+[2017-09-25 17:54:18] 开始下载店铺[allroot]Message第13条
+[2017-09-25 17:54:19] 下载店铺[allroot]Message第13条主表成功
+[2017-09-25 17:54:19] 下载店铺[allroot]Message第13条细表成功
+[2017-09-25 17:54:19] 开始下载店铺[allroot]Message第14条
+[2017-09-25 17:54:20] 下载店铺[allroot]Message第14条主表成功
+[2017-09-25 17:54:20] 下载店铺[allroot]Message第14条细表成功
+[2017-09-25 17:54:20] 开始下载店铺[allroot]Message第15条
+[2017-09-25 17:54:21] 下载店铺[allroot]Message第15条主表成功
+[2017-09-25 17:54:21] 下载店铺[allroot]Message第15条细表成功
+[2017-09-25 17:54:21] 开始下载店铺[allroot]Message第16条
+[2017-09-25 17:54:22] 下载店铺[allroot]Message第16条主表成功
+[2017-09-25 17:54:22] 下载店铺[allroot]Message第16条细表成功
+[2017-09-25 17:54:22] [同步ebayMessage]执行完毕,每天17点下载
+[2017-10-27 16:22:26] [同步ebayMessage]启动成功,每天10点下载
+[2017-10-27 16:23:13] [同步ebayMessage]启动成功,每天10点下载
+[2017-10-27 16:29:32] [同步ebayMessage]启动成功,每天16点下载
+[2017-10-27 16:29:33] [同步ebayMessage]本次共有[3]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-10-27 16:29:33] 开始下载ebayMessage,等待API响应 2017-10-27 16:29:33
+[2017-10-27 16:29:35] 下载店铺[5cn8841]Message标题成功,共0条
+[2017-10-27 16:29:35] 开始下载ebayMessage,等待API响应 2017-10-27 16:29:35
+[2017-10-27 16:29:36] 开始下载ebayMessage,等待API响应 2017-10-27 16:29:36
+[2017-10-27 16:29:36] 下载店铺[allroot]Message共23条
+[2017-10-27 16:29:37] 店铺[allroot]Message第1条MessageID:92723943900已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第2条MessageID:92708681560已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第3条MessageID:92650380900已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第4条MessageID:92581663090已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第5条MessageID:92578576850已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第6条MessageID:92440435980已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第7条MessageID:92194369400已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第8条MessageID:92038754190已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第9条MessageID:91953793920已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第10条MessageID:91576887160已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第11条MessageID:91398114030已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第12条MessageID:91382876250已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第13条MessageID:91193825460已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第14条MessageID:90941986620已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第15条MessageID:90853248580已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第16条MessageID:90853186090已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第17条MessageID:90829838510已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第18条MessageID:90805230530已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第19条MessageID:90800033650已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第20条MessageID:90681751230已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第21条MessageID:90637847600已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第22条MessageID:90606153030已存在,不下载
+[2017-10-27 16:29:37] 店铺[allroot]Message第23条MessageID:90453794490已存在,不下载
+[2017-10-27 16:29:38] 下载店铺[allroot]Message共23条
+[2017-10-27 16:29:38] 店铺[allroot]Message第1条MessageID:92723943900已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第2条MessageID:92708681560已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第3条MessageID:92650380900已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第4条MessageID:92581663090已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第5条MessageID:92578576850已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第6条MessageID:92440435980已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第7条MessageID:92194369400已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第8条MessageID:92038754190已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第9条MessageID:91953793920已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第10条MessageID:91576887160已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第11条MessageID:91398114030已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第12条MessageID:91382876250已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第13条MessageID:91193825460已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第14条MessageID:90941986620已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第15条MessageID:90853248580已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第16条MessageID:90853186090已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第17条MessageID:90829838510已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第18条MessageID:90805230530已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第19条MessageID:90800033650已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第20条MessageID:90681751230已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第21条MessageID:90637847600已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第22条MessageID:90606153030已存在,不下载
+[2017-10-27 16:29:38] 店铺[allroot]Message第23条MessageID:90453794490已存在,不下载
+[2017-10-27 16:29:42] [同步ebayMessage]执行完毕,每天16点下载
+[2017-10-27 16:31:10] [修改ebayMessage状态]启动成功,每天16点同步
+[2017-10-27 16:31:11] [修改ebayMessage状态]本次共有[3]个店铺需同步,启用[3]个线程进行处理.
+[2017-10-27 16:31:11] 开始修改ebayMessage状态,等待API响应 2017-10-27 16:31:11
+[2017-10-27 16:31:11] 店铺[5cn8841]没有需要修改ebayMessage状态的
+[2017-10-27 16:31:11] 开始修改ebayMessage状态,等待API响应 2017-10-27 16:31:11
+[2017-10-27 16:31:11] 店铺[allroot]没有需要修改ebayMessage状态的
+[2017-10-27 16:31:11] 开始修改ebayMessage状态,等待API响应 2017-10-27 16:31:11
+[2017-10-27 16:31:11] 店铺[allroot]没有需要修改ebayMessage状态的
+[2017-10-27 16:31:20] [修改ebayMessage状态]执行完毕,每天16点同步
+[2017-10-27 16:32:40] [回复ebayMessage]启动成功,每天16点同步
+[2017-10-27 16:32:41] [回复ebayMessage]本次共有[3]个店铺需回复,启用[3]个线程进行处理.
+[2017-10-27 16:32:41] 开始回复ebayMessage,等待API响应 2017-10-27 16:32:41
+[2017-10-27 16:32:41] 店铺[5cn8841]没有需要回复的ebayMessage
+[2017-10-27 16:32:41] 开始回复ebayMessage,等待API响应 2017-10-27 16:32:41
+[2017-10-27 16:32:41] 店铺[allroot]没有需要回复的ebayMessage
+[2017-10-27 16:32:41] 开始回复ebayMessage,等待API响应 2017-10-27 16:32:41
+[2017-10-27 16:32:41] 店铺[allroot]没有需要回复的ebayMessage
+[2017-10-27 16:32:50] [回复ebayMessage]执行完毕,每天16点同步
+[2017-10-27 16:33:18] [修改ebayMessage状态]启动成功,每天16点同步
+[2017-10-27 16:33:19] [修改ebayMessage状态]本次共有[3]个店铺需同步,启用[3]个线程进行处理.
+[2017-10-27 16:33:19] 开始修改ebayMessage状态,等待API响应 2017-10-27 16:33:19
+[2017-10-27 16:33:19] 店铺[5cn8841]没有需要修改ebayMessage状态的
+[2017-10-27 16:33:19] 开始修改ebayMessage状态,等待API响应 2017-10-27 16:33:19
+[2017-10-27 16:33:19] 店铺[allroot]没有需要修改ebayMessage状态的
+[2017-10-27 16:33:19] 开始修改ebayMessage状态,等待API响应 2017-10-27 16:33:19
+[2017-10-27 16:33:19] 店铺[allroot]需要修改ebayMessage状态共2条
+[2017-10-27 16:33:19] 店铺[allroot]开始修改ebayMessage状态第1条92708681560
+[2017-10-27 16:33:21] 店铺[allroot]第1条修改ebayMessage状态成功,开始更新数据库
+[2017-10-27 16:33:21] 店铺[allroot]修改ebayMessage状态第1条更新数据库成功
+[2017-10-27 16:33:21] 店铺[allroot]开始修改ebayMessage状态第2条92650380900
+[2017-10-27 16:33:22] 店铺[allroot]第2条修改ebayMessage状态成功,开始更新数据库
+[2017-10-27 16:33:22] 店铺[allroot]修改ebayMessage状态第2条更新数据库成功
+[2017-10-27 16:33:28] [修改ebayMessage状态]执行完毕,每天16点同步
+[2017-10-27 16:42:23] [回复ebayMessage]启动成功,每天16点同步
+[2017-10-27 16:42:24] [回复ebayMessage]本次共有[3]个店铺需回复,启用[3]个线程进行处理.
+[2017-10-27 16:42:24] 开始回复ebayMessage,等待API响应 2017-10-27 16:42:24
+[2017-10-27 16:42:24] 店铺[5cn8841]没有需要回复的ebayMessage
+[2017-10-27 16:42:24] 开始回复ebayMessage,等待API响应 2017-10-27 16:42:24
+[2017-10-27 16:42:24] 店铺[allroot]没有需要回复的ebayMessage
+[2017-10-27 16:42:24] 开始回复ebayMessage,等待API响应 2017-10-27 16:42:24
+[2017-10-27 16:42:24] 店铺[allroot]需要回复ebayMessage共5条
+[2017-10-27 16:42:24] 店铺[allroot]开始回复ebayMessage第1条91382876250
+[2017-10-27 16:42:28] 店铺[allroot]第1条回复ebayMessage成功,开始更新数据库
+[2017-10-27 16:42:28] 店铺[allroot]回复ebayMessage第1条更新数据库成功
+[2017-10-27 16:42:28] 店铺[allroot]开始回复ebayMessage第2条91382876250
+[2017-10-27 16:42:30] 店铺[allroot]第2条回复ebayMessage成功,开始更新数据库
+[2017-10-27 16:42:30] 店铺[allroot]回复ebayMessage第2条更新数据库成功
+[2017-10-27 16:42:30] 店铺[allroot]开始回复ebayMessage第3条91382876250
+[2017-10-27 16:42:33] 店铺[allroot]第3条回复ebayMessage成功,开始更新数据库
+[2017-10-27 16:42:33] 店铺[allroot]回复ebayMessage第3条更新数据库成功
+[2017-10-27 16:42:33] 店铺[allroot]开始回复ebayMessage第4条91382876250
+[2017-10-27 16:42:52] 店铺[allroot]第4条回复ebayMessage成功,开始更新数据库
+[2017-10-27 16:42:52] 店铺[allroot]回复ebayMessage第4条更新数据库成功
+[2017-10-27 16:42:52] 店铺[allroot]开始回复ebayMessage第5条91382876250
+[2017-10-27 16:42:55] 店铺[allroot]第5条回复ebayMessage成功,开始更新数据库
+[2017-10-27 16:42:55] 店铺[allroot]回复ebayMessage第5条更新数据库成功
+[2017-10-27 16:42:55] [回复ebayMessage]执行完毕,每天16点同步
+[2017-10-27 16:43:00] [回复ebayMessage]启动成功,每天16点同步
+[2017-10-27 16:43:01] [回复ebayMessage]本次共有[3]个店铺需回复,启用[3]个线程进行处理.
+[2017-10-27 16:43:01] 开始回复ebayMessage,等待API响应 2017-10-27 16:43:01
+[2017-10-27 16:43:01] 店铺[5cn8841]没有需要回复的ebayMessage
+[2017-10-27 16:43:01] 开始回复ebayMessage,等待API响应 2017-10-27 16:43:01
+[2017-10-27 16:43:01] 店铺[allroot]没有需要回复的ebayMessage
+[2017-10-27 16:43:01] 开始回复ebayMessage,等待API响应 2017-10-27 16:43:01
+[2017-10-27 16:43:01] 店铺[allroot]没有需要回复的ebayMessage
+[2017-10-27 16:43:10] [回复ebayMessage]执行完毕,每天16点同步
+[2017-11-02 19:12:16] [同步ebayMessage]启动成功,每隔15分钟下载一次
+[2017-11-02 19:12:18] [同步ebayMessage]本次共有[3]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 19:12:18] 开始下载ebayMessage,等待API响应 2017-11-02 19:12:18
+[2017-11-02 19:12:20] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 19:12:20] 开始下载ebayMessage,等待API响应 2017-11-02 19:12:20
+[2017-11-02 19:12:21] 开始下载ebayMessage,等待API响应 2017-11-02 19:12:21
+[2017-11-02 19:12:21] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 19:12:21] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 19:12:22] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 19:12:23] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 19:12:24] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 19:12:24] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 19:12:24] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 19:12:24] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 19:12:24] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 19:12:27] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 19:27:27
+[2017-11-02 19:27:27] [同步ebayMessage]本次共有[3]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 19:27:27] 开始下载ebayMessage,等待API响应 2017-11-02 19:27:27
+[2017-11-02 19:27:29] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 19:27:29] 开始下载ebayMessage,等待API响应 2017-11-02 19:27:29
+[2017-11-02 19:27:30] 开始下载ebayMessage,等待API响应 2017-11-02 19:27:30
+[2017-11-02 19:27:30] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 19:27:31] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 19:27:35] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 19:27:35] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 19:27:35] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 19:27:35] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 19:27:35] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 19:27:36] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 19:27:36] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 19:42:36
+[2017-11-02 19:42:37] [同步ebayMessage]本次共有[3]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 19:42:37] 开始下载ebayMessage,等待API响应 2017-11-02 19:42:37
+[2017-11-02 19:42:38] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 19:42:38] 开始下载ebayMessage,等待API响应 2017-11-02 19:42:38
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 19:42:39] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 19:42:40] 开始下载ebayMessage,等待API响应 2017-11-02 19:42:40
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 19:42:40] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 19:42:41] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 19:42:42] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 19:42:42] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 19:42:42] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 19:42:42] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 19:42:42] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 19:42:42] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 19:42:42] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 19:42:46] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 19:57:46
+[2017-11-02 19:57:46] [同步ebayMessage]本次共有[3]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 19:57:46] 开始下载ebayMessage,等待API响应 2017-11-02 19:57:46
+[2017-11-02 19:57:48] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 19:57:48] 开始下载ebayMessage,等待API响应 2017-11-02 19:57:48
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 19:57:49] 开始下载ebayMessage,等待API响应 2017-11-02 19:57:49
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 19:57:49] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 19:57:50] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 19:57:50] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 19:57:50] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 19:57:50] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 19:57:50] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 19:57:50] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 19:57:50] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 19:57:50] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 19:57:50] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 19:57:51] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 19:57:55] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 20:12:55
+[2017-11-02 20:12:56] [同步ebayMessage]本次共有[4]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 20:12:56] 开始下载ebayMessage,等待API响应 2017-11-02 20:12:56
+[2017-11-02 20:12:58] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 20:12:58] 开始下载ebayMessage,等待API响应 2017-11-02 20:12:58
+[2017-11-02 20:12:58] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 20:12:58] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 20:12:58] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 20:12:59] 开始下载ebayMessage,等待API响应 2017-11-02 20:12:59
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 20:12:59] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 20:12:59] 开始下载ebayMessage,等待API响应 2017-11-02 20:12:59
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 20:13:00] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 20:13:01] 下载用户：xcbin店铺[testuser_allroot]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:13:02.127Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:13:05] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 20:28:05
+[2017-11-02 20:28:05] [同步ebayMessage]本次共有[5]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 20:28:05] 开始下载ebayMessage,等待API响应 2017-11-02 20:28:05
+[2017-11-02 20:28:07] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 20:28:07] 开始下载ebayMessage,等待API响应 2017-11-02 20:28:07
+[2017-11-02 20:28:08] 开始下载ebayMessage,等待API响应 2017-11-02 20:28:08
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 20:28:10] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 20:28:10] 开始下载ebayMessage,等待API响应 2017-11-02 20:28:10
+[2017-11-02 20:28:11] 下载用户：xcbin店铺[testuser_allroot]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:28:12.502Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:28:11] 开始下载ebayMessage,等待API响应 2017-11-02 20:28:11
+[2017-11-02 20:28:11] 下载用户：xcbin店铺[testuser_allroot1]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:28:12.910Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 20:28:13] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 20:28:14] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 20:28:14] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 20:43:14
+[2017-11-02 20:43:15] [同步ebayMessage]本次共有[6]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 20:43:15] 开始下载ebayMessage,等待API响应 2017-11-02 20:43:15
+[2017-11-02 20:43:18] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 20:43:18] 开始下载ebayMessage,等待API响应 2017-11-02 20:43:18
+[2017-11-02 20:43:18] 开始下载ebayMessage,等待API响应 2017-11-02 20:43:18
+[2017-11-02 20:43:21] 开始下载ebayMessage,等待API响应 2017-11-02 20:43:21
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 20:43:23] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 20:43:23] 开始下载ebayMessage,等待API响应 2017-11-02 20:43:23
+[2017-11-02 20:43:24] 下载用户：xcbin店铺[testuser_allroot1]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:43:25.424Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:43:24] 开始下载ebayMessage,等待API响应 2017-11-02 20:43:24
+[2017-11-02 20:43:25] 下载用户：xcbin店铺[testuser_sbxyanfei5210]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:43:26.221Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:43:32] 下载用户：xcbin店铺[testuser_allroot]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:43:33.846Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 20:43:40] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 20:43:41] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 20:43:41] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 20:43:41] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 20:43:41] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 20:43:41] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 20:43:41] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 20:43:41] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 20:58:41
+[2017-11-02 20:58:42] [同步ebayMessage]本次共有[6]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 20:58:42] 开始下载ebayMessage,等待API响应 2017-11-02 20:58:42
+[2017-11-02 20:58:45] 开始下载ebayMessage,等待API响应 2017-11-02 20:58:45
+[2017-11-02 20:58:47] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 20:58:47] 开始下载ebayMessage,等待API响应 2017-11-02 20:58:47
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 20:58:48] 开始下载ebayMessage,等待API响应 2017-11-02 20:58:48
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 20:58:48] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 20:58:48] 开始下载ebayMessage,等待API响应 2017-11-02 20:58:48
+[2017-11-02 20:58:48] 下载用户：xcbin店铺[testuser_allroot]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:58:50.034Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:58:49] 开始下载ebayMessage,等待API响应 2017-11-02 20:58:48
+[2017-11-02 20:58:50] 下载用户：xcbin店铺[testuser_allroot1]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:58:51.532Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:58:51] 下载用户：xcbin店铺[testuser_sbxyanfei5210]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T12:58:52.678Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 20:58:54] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 20:58:54] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 20:58:55] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 20:58:56] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 21:13:56
+[2017-11-02 21:13:56] [同步ebayMessage]本次共有[6]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 21:13:56] 开始下载ebayMessage,等待API响应 2017-11-02 21:13:56
+[2017-11-02 21:13:58] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 21:13:58] 开始下载ebayMessage,等待API响应 2017-11-02 21:13:58
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 21:13:59] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 21:13:59] 开始下载ebayMessage,等待API响应 2017-11-02 21:13:59
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 21:14:00] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 21:14:00] 开始下载ebayMessage,等待API响应 2017-11-02 21:14:00
+[2017-11-02 21:14:00] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 21:14:00] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 21:14:00] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 21:14:00] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 21:14:00] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 21:14:00] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 21:14:01] 开始下载ebayMessage,等待API响应 2017-11-02 21:14:01
+[2017-11-02 21:14:01] 下载用户：xcbin店铺[testuser_allroot]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T13:14:03.081Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 21:14:02] 开始下载ebayMessage,等待API响应 2017-11-02 21:14:02
+[2017-11-02 21:14:02] 下载用户：xcbin店铺[testuser_allroot1]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T13:14:03.269Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 21:14:02] 下载用户：xcbin店铺[testuser_sbxyanfei5210]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T13:14:03.633Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 21:14:05] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 21:29:05
+[2017-11-02 21:29:06] [同步ebayMessage]本次共有[6]个店铺需下载Message,启用[3]个线程进行处理.
+[2017-11-02 21:29:06] 开始下载ebayMessage,等待API响应 2017-11-02 21:29:06
+[2017-11-02 21:29:09] 开始下载ebayMessage,等待API响应 2017-11-02 21:29:09
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message共27条
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 21:29:12] 下载用户：neilwang店铺[5cn8841]Message标题成功,共0条
+[2017-11-02 21:29:12] 开始下载ebayMessage,等待API响应 2017-11-02 21:29:12
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 21:29:12] 开始下载ebayMessage,等待API响应 2017-11-02 21:29:12
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 21:29:12] 下载用户：allroot123店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 21:29:12] 开始下载ebayMessage,等待API响应 2017-11-02 21:29:12
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[testuser_allroot]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T13:29:14.174Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 21:29:13] 开始下载ebayMessage,等待API响应 2017-11-02 21:29:13
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message共27条
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第1条MessageID:93048357080已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第2条MessageID:92980972960已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[testuser_sbxyanfei5210]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T13:29:14.737Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第3条MessageID:92856862200已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第4条MessageID:92855857470已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第5条MessageID:92723943900已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第6条MessageID:92708681560已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第7条MessageID:92650380900已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第8条MessageID:92581663090已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第9条MessageID:92578576850已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第10条MessageID:92440435980已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第11条MessageID:92194369400已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第12条MessageID:92038754190已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第13条MessageID:91953793920已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第14条MessageID:91576887160已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第15条MessageID:91398114030已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第16条MessageID:91382876250已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第17条MessageID:91193825460已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第18条MessageID:90941986620已存在,不下载
+[2017-11-02 21:29:13] 下载用户：xcbin店铺[allroot]Message第19条MessageID:90853248580已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[allroot]Message第20条MessageID:90853186090已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[allroot]Message第21条MessageID:90829838510已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[allroot]Message第22条MessageID:90805230530已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[allroot]Message第23条MessageID:90800033650已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[allroot]Message第24条MessageID:90681751230已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[allroot]Message第25条MessageID:90637847600已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[allroot]Message第26条MessageID:90606153030已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[allroot]Message第27条MessageID:90453794490已存在,不下载
+[2017-11-02 21:29:14] 下载用户：xcbin店铺[testuser_allroot1]Message标题失败,<?xml version="1.0" encoding="UTF-8"?><GetMyMessagesResponse xmlns="urn:ebay:apis:eBLBaseComponents"><Timestamp>2017-11-02T13:29:15.361Z</Timestamp><Ack>Failure</Ack><Errors><ShortMessage>Token does not exist.</ShortMessage><LongMessage>The token does not exist, the user must complete the Auth &amp; Auth sign in process to generate token.</LongMessage><ErrorCode>16119</ErrorCode><SeverityCode>Error</SeverityCode><ErrorClassification>RequestError</ErrorClassification></Errors><Version>1031</Version><Build>E1031_CORE_APIMSG_18536032_R1</Build></GetMyMessagesResponse>
+[2017-11-02 21:29:15] [同步ebayMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-02 21:44:15
+[2017-11-21 21:46:17] [同步WishMessage]启动成功,每隔15分钟下载一次
+[2017-11-21 21:46:18] [同步WishMessage]本次共有[1]个店铺需下载Message,启用[1]个线程进行处理.
+[2017-11-21 21:46:18] 开始下载wishMessage,等待API响应 2017-11-21 21:46:18
+[2017-11-21 21:46:21] [同步WishMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-21 22:01:21
+[2017-11-21 22:01:13] [同步WishMessage]启动成功,每隔15分钟下载一次
+[2017-11-21 22:01:15] [同步WishMessage]本次共有[1]个店铺需下载Message,启用[1]个线程进行处理.
+[2017-11-21 22:01:15] 开始下载wishMessage,等待API响应 2017-11-21 22:01:15
+[2017-11-21 22:01:18] [同步WishMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-21 22:16:18
+[2017-11-21 22:04:42] [同步WishMessage]启动成功,每隔15分钟下载一次
+[2017-11-21 22:04:43] [同步WishMessage]本次共有[1]个店铺需下载Message,启用[1]个线程进行处理.
+[2017-11-21 22:04:43] 开始下载wishMessage,等待API响应 2017-11-21 22:04:43
+[2017-11-21 22:04:46] [同步WishMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-21 22:19:46
+[2017-11-21 22:05:29] [同步WishMessage]启动成功,每隔15分钟下载一次
+[2017-11-21 22:05:30] [同步WishMessage]本次共有[1]个店铺需下载Message,启用[1]个线程进行处理.
+[2017-11-21 22:05:30] 开始下载wishMessage,等待API响应 2017-11-21 22:05:30
+[2017-11-21 22:05:33] [同步WishMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-21 22:20:33
+[2017-11-21 22:07:23] [同步WishMessage]启动成功,每隔15分钟下载一次
+[2017-11-21 22:07:24] [同步WishMessage]本次共有[1]个店铺需下载Message,启用[1]个线程进行处理.
+[2017-11-21 22:07:24] 开始下载wishMessage,等待API响应 2017-11-21 22:07:24
+[2017-11-21 22:07:26] 下载用户：xcbin店铺[yingkailin]Message标题失败,No access token found or the app does not exist.
+[2017-11-21 22:07:27] [同步WishMessage]执行完毕,每隔15分钟下载一次。下次下载时间：2017-11-21 22:22:27

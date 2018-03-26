@@ -1,0 +1,136 @@
+package com.allroot.Dao;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.allroot.db.ConnDB;
+import com.allroot.entity.WishUser;
+import com.allroot.tool.Log;
+import com.allroot.tool.MyHttpRequest;
+import com.allroot.tool.Tools;
+
+public class WishAbout {
+	
+	private final static String jobName = "[同步WishMessage]";
+	private final static String appKey="55dbed0739fb7f4231396c17";
+	private final static String appSecret="5682838d039f4431bbc3944910f17bf9"; 
+	private final static String URL="https://merchant.wish.com/api/v2/ticket/get-action-required";
+	/*private final static String appKey="59fc2ef8ab17d53c10eb8e0c";
+	private final static String appSecret="d172af11df09433f9cdd43c76d0097bb"; 
+	private final static String URL="https://sandbox.merchant.wish.com/api/v2/ticket/get-action-required";*/
+	public static String SetDBValue(Object Avalue) {
+		return Avalue == null ? "" : Avalue.toString().replaceAll("'", "''");
+	}
+	// 获取所有监测账号
+	public static ArrayList<WishUser> GetAllOtherWishUser() {
+		ArrayList<WishUser> users = new ArrayList<WishUser>();
+		Map<String,Object> outpd=new HashMap<String,Object>();
+		String SqlStr = "select UID,AliasName,ShopName,AccessToken,RefreshToken,WishAppkey,WishAppSecret,DATEDIFF(HOUR,LastSyncTime,GETDATE()) as diffhour from S_SyncInfoWish";
+		ArrayList<HashMap<String, Object>> list = null;
+		try {
+			list = ConnDB.DBSelect(SqlStr, true);
+			
+			
+			for (int i = 0; i < list.size(); i++) {	
+				
+				String RefreshToken = Tools.toString(list.get(i).get("RefreshToken"));
+				int diffhour = Tools.toInt(list.get(i).get("diffhour"));
+				String WishAppkey=Tools.toString(list.get(i).get("WishAppkey"));
+				String WishAppSecret=Tools.toString(list.get(i).get("WishAppSecret"));
+				if(WishAppkey.equals("")){
+					WishAppkey=appKey;
+					WishAppSecret=appSecret;
+				}
+				// 判断最后同步时间与现在是否超过8小时
+				if (diffhour >= 10) {
+					// 大于10小时 重新授权
+					outpd = GetWishTokenByRefreshToken(WishAppkey,WishAppSecret,RefreshToken);
+					list.get(i).put("AccessToken", Tools.toString(outpd.get("access_token")));
+					list.get(i).put("RefreshToken", Tools.toString(outpd.get("RefreshToken")));
+				}
+				WishUser user = new WishUser();
+				user.setUID(Tools.toString(list.get(i).get("UID")));
+				user.setAliasName(Tools.toString(list.get(i).get("AliasName")));
+				user.setShopName(Tools.toString(list.get(i).get("ShopName")));
+				user.setAccessToken(Tools.toString(list.get(i).get("AccessToken")));
+				user.setRefreshToken(Tools.toString(list.get(i).get("RefreshToken")));
+				user.setWishAppkey(Tools.toString(list.get(i).get("WishAppkey")));
+				user.setWishAppSecret(Tools.toString(list.get(i).get("WishAppSecret")));
+
+				
+				users.add(user);
+			}
+			//System.out.println(list);
+		} catch (Exception e) {
+			Log.errLog("[GetAllOtherWishUser[" + SqlStr + "] 出错:" + Tools.toString(e.getMessage()));
+			Log.printLog("[GetAllOtherWishUser]执行数据库出错: " + Tools.toString(e.getMessage()));
+		}
+		return users;
+	}
+	
+	
+	public static Map<String,Object> GetWishTokenByRefreshToken(String WishAppkey, String WishAppSecret, String RefreshToken){
+		Map<String,Object> outpd=new HashMap<String,Object>();
+		String RequestURL = "https://merchant.wish.com/api/v2/oauth/refresh_token";
+		String PostData = "client_id=" + WishAppkey 
+						+ "&client_secret=" + WishAppSecret
+						+ "&grant_type=refresh_token"
+				        + "&refresh_token=" + RefreshToken;
+		MyHttpRequest httpobj = MyHttpRequest.httpRequest(RequestURL, "POST", PostData, "UTF-8");
+		if (httpobj == null) {
+			Log.printLog(jobName + "获取授权失败!");
+		} else {
+			if (httpobj.getSuccessFlag()) {
+				String jsonstr = httpobj.getResponse();
+				if (jsonstr.indexOf("access_token") == -1) {
+					Log.printLog(jobName + "获取待同步店的AccessToken出错:" + Tools.toString(jsonstr));	
+				} else {
+					try {
+						JSONObject jsonReq = new JSONObject(jsonstr);
+						String access_token=jsonReq.getJSONObject("data").optString("access_token", "");
+						
+						updatetoken(access_token,RefreshToken);
+						outpd.put("access_token", access_token);
+						outpd.put("RefreshToken", RefreshToken);
+					} catch (JSONException e) {
+						Log.printLog(jobName + "获取待同步店的AccessToken出错:" + Tools.toString(e.getMessage()));	
+					} catch (Exception e) {
+						Log.printLog(jobName + "更新待同步店的AccessToken出错:" + Tools.toString(e.getMessage()));	
+					}
+					
+				}
+	
+			} else {
+				Log.printLog(jobName + "获取待同步店的AccessToken出错:" + Tools.toString(httpobj.getErrorStr()));
+			}
+	
+		}
+		return outpd;
+	}
+	
+	
+	public static void updatetoken(String access_token,String RefreshToken) throws Exception {
+		String sql="update S_SyncInfoWish set AccessToken='"+SetDBValue(access_token)+"',LastSyncTime=GETDATE() where RefreshToken='"+SetDBValue(RefreshToken)+"'";
+		ConnDB.executeUpdate(sql,false);
+	}
+
+
+	public static MyHttpRequest getWishMessageReturnHeaders(String LPostData) {
+		return MyHttpRequest.httpRequest(URL, "POST", LPostData, "UTF-8");		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,129 @@
+package com.allroot.wishSynAfterSales;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletResponse;
+
+import com.allroot.db.ConnDB;
+import com.allroot.entity.WishUser;
+import com.allroot.tool.JSON;
+import com.allroot.tool.Log;
+import com.allroot.tool.MyHttpRequest;
+import com.allroot.tool.Tools;
+
+public class WishAfterSales {
+
+	
+	
+	public void synWishDispute(WishUser user){
+		
+		  Calendar calendar1 = Calendar.getInstance();
+		  SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+		  calendar1.add(Calendar.DATE, -1);
+		  String since = sdf1.format(calendar1.getTime());//获取3天前的数据
+		//  System.out.println("时间：-》》》》》》"+since);
+		
+		String access_token=user.getAccessToken();
+		String url="https://merchant.wish.com/api/v2/order/multi-get";
+		String LPostData="start=0&limit=200&since="+since+"&access_token="+access_token;
+		synProcess(user,url,LPostData);
+		
+		
+	}
+	
+	
+	public void synProcess(WishUser user,String url,String LPostData){
+		String sql="";
+		String logs="";
+		String UID=user.getUID();
+		String ShopName = user.getShopName();
+		String suffix = user.getAliasName();//店铺简称
+		MyHttpRequest httpobj = MyHttpRequest.httpRequest(url, "POST", LPostData, "UTF-8");
+		if(httpobj==null){
+			logs = "下载用户："+UID+"店铺[" + ShopName + "]售后单失败，httpobj为null";
+			Log.printLog(logs);
+			Log.errLog(logs);
+			return;
+		}else{
+			String jsonStr = httpobj.getResponse();
+			Map<String, Object> jsonobj = (Map<String, Object>) JSON.decode(jsonStr);
+			int code = Tools.toInt(jsonobj.get("code"));
+			Map<String,Object> paging=(Map<String, Object>) jsonobj.get("paging");
+			String next="";
+			if(paging!=null && !paging.isEmpty()){
+				next=Tools.toString(paging.get("next"));
+			}
+			if (code == 0) {
+				//解析数据
+				List<Map<String,Object>> data=(List<Map<String, Object>>) jsonobj.get("data");
+				if(data.isEmpty()){
+					logs = "下载用户："+UID+"店铺[" + ShopName + "]售后单失败，返回数据data为空";
+					Log.printLog(logs);
+					Log.errLog(logs);
+					return;
+				}else{
+					for(int j=0;j<data.size();j++){
+						Map<String,Object> Order = (Map<String, Object>) data.get(j).get("Order");
+						String state = (String) Order.get("state");
+						if("REFUNDED".equals(state)){//判断是否为退货单，是的话提取相关数据存到数据库中
+							String refunded_time = (String) Order.get("refunded_time");
+							String refunded_by = (String) Order.get("refunded_by");
+							String order_total = (String) Order.get("order_total");
+							String order_id = (String) Order.get("order_id");
+							String refunded_reason = (String) Order.get("refunded_reason");
+							String transaction_id = (String) Order.get("transaction_id");
+							//List<PageData> tradeRefundList = (List<PageData>) dao.findForList("WishDisputeMapper.findTradeRefund", pd);
+							sql="if not exists  ( select * from XS_WH_TradeRefund(nolock)"
+									+ "where UID='"+Tools.SetDBValue(UID)+"' and ACK='"+Tools.SetDBValue(order_id) + "' and suffix='"+Tools.SetDBValue(suffix) + "')"		
+											+ "insert into XS_WH_TradeRefund(UID,ACK,refundedTime,orderTotal,refundedBy,refundedReason,transactionId,suffix)"
+											+ "select"														
+											+ "'" + Tools.SetDBValue(UID) + "',"														
+											+ "'" + Tools.SetDBValue(order_id) + "',"														
+											+ "'" + Tools.SetDBValue(refunded_time) + "',"	
+											+ "'" + Tools.SetDBValue(order_total) + "',"	
+											+ "'" + Tools.SetDBValue(refunded_by) + "',"	
+											+ "'" + Tools.SetDBValue(refunded_reason) + "',"	
+											+ "'" + Tools.SetDBValue(transaction_id) + "',"	
+											+ "'" + Tools.SetDBValue(suffix) + "'"	;
+							
+							try {
+								System.out.println("sql====================" + sql);
+								ConnDB.DBExcuteSQL(sql);
+								sql = "exec P_XS_WishToSaleAfter '" + UID + "','" + suffix + "','" + order_id +"'";  
+								ArrayList<HashMap<String, Object>> msgList = ConnDB.DBSelect(sql, false);
+								
+								System.out.println("aaaaaaaaaaaaaa------------------aaaaaaa" + msgList);
+							} catch (Exception e) {
+								logs = "下载用户："+UID+"店铺[" + ShopName + "]售后单失败，失败原因："+e.getMessage();
+								Log.printLog(logs);
+								Log.errLog(logs);
+								return;
+								}
+						}	
+					}	
+				}
+				
+				
+			}else{
+				logs = "下载用户："+UID+"店铺[" + ShopName + "]售后单失败，授权失败："+(String) jsonobj.get("message");
+				Log.printLog(logs);
+				Log.errLog(logs);
+			}			
+			if(!next.isEmpty()){
+				url=next.substring(0, next.indexOf("?"));
+				LPostData=next.substring(next.indexOf("?")+1)+LPostData.substring(LPostData.indexOf("&"));
+				synProcess(user,url,LPostData);
+			}
+		}
+	}
+	
+	
+	
+	
+	
+}
