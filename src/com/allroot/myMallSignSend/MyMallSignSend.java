@@ -1,29 +1,31 @@
-package joomSignSend;
+package com.allroot.myMallSignSend;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 import org.json.JSONObject;
 
 import com.allroot.db.ConnDB;
-import com.allroot.entity.JoomUser;
+import com.allroot.entity.MyMallUser;
 import com.allroot.tool.Log;
 import com.allroot.tool.MyHttpRequest;
 import com.allroot.tool.Tools;
 
-public class JoomSignSend {
+public class MyMallSignSend {
 
-	public void signSendGoods(JoomUser user) {
+	public void signSendGoods(MyMallUser user) {
 	
 		String access_token=user.getAccessToken();
-		String url="https://www.merchant.wish.com/api/v2/order/fulfill-one";
+		String url="https://mall.my.com/merchant/wish/api/v2/order/fulfill-one";
 		String suffix = user.getAliasName();//店铺简称
 		String UID = user.getUID();
-		String sql = " select * from S_SyncSet where  Platform = 'joom' and uid = '" 
+		String sql = " select * from S_SyncSet where  Platform = 'mymall' and uid = '" 
 				+ Tools.SetDBValue(UID) + "'";
 		String logs="";
 		String LPostData="";
-		
+		Map<String,String> Authorization = new HashMap<String,String>();
+		Authorization.put("Authorization", "Bearer " + access_token);
 		try {
 			int signminute = 20;	//标记间隔时间
 			int Shortage = 0;	//等待处理订单-缺货订单
@@ -90,7 +92,7 @@ public class JoomSignSend {
 				String carrierEN = "";//承运商英文  tracking_provider
 				String ACK = "";//order_id
 				String NID = "";
-				sql="exec P_XS_GetUnShipedOrdersJoom '"+Tools.SetDBValue(Shortage)+"','"+Tools.SetDBValue(delivery)+"','"+Tools.SetDBValue(WarehouseBag)+"','"+Tools.SetDBValue(LogisticsBag)+"','"+Tools.SetDBValue(Shipped)+"'";
+				sql="exec P_XS_GetUnShipedOrdersMall '"+Tools.SetDBValue(Shortage)+"','"+Tools.SetDBValue(delivery)+"','"+Tools.SetDBValue(WarehouseBag)+"','"+Tools.SetDBValue(LogisticsBag)+"','"+Tools.SetDBValue(Shipped)+"','"+Tools.SetDBValue(overseas)+"','"+Tools.SetDBValue(suffix)+"','"+Tools.SetDBValue(UID)+"'";
 				ArrayList<HashMap<String, Object>> pjList = null;
 				HashMap<String, String> trackNoMap = new HashMap<String, String>();
 				System.out.println(sql);
@@ -126,13 +128,20 @@ public class JoomSignSend {
 							continue;
 						}
 						
-					  LPostData="access_token="+access_token
-								+"&id="+ACK
+					  LPostData="&id="+ACK
 								+"&tracking_provider="+carrierEN
 								+"&tracking_number="+TrackNo;
 						
-					  fulfill_one(url,LPostData,user,NID);	
+					  fulfill_one(url,LPostData,user,NID,Authorization);	
 						
+					}
+					String updateSql="update S_SyncInfoMall set SyncSuccessTime=GETDATE() where AliasName='"+Tools.SetDBValue(suffix)+"' and UID='"+Tools.SetDBValue(UID)+"'";
+					try {
+						ConnDB.executeUpdate(updateSql,false);
+					} catch (Exception e) {
+						logs = "下载用户："+UID+"店铺[" + suffix + "]更新最后同步时间失败";
+						Log.printLog(logs);
+						Log.errLog(logs);
 					}
 				}else{
 					logs = "标记发货用户："+UID+"店铺[" + suffix + "]：没有需要标记的单子";
@@ -167,12 +176,12 @@ public class JoomSignSend {
 	}
 
 	
-	private void fulfill_one(String url, String LPostData,JoomUser user,String NID) throws Exception {
+	private void fulfill_one(String url, String LPostData,MyMallUser user,String NID,Map<String,String> Authorization) throws Exception {
 		String UID = user.getUID();
 		String suffix = user.getAliasName();//店铺简称
 		String logs="";
 		String sql="";
-		MyHttpRequest httpobj = MyHttpRequest.httpRequest(url, "POST", LPostData, "UTF-8");
+		MyHttpRequest httpobj = MyHttpRequest.httpRequest(url,Authorization,"POST", LPostData, "UTF-8");
 		
 		Log.printLog("正在获取标记结果,请等待一分钟...");
 		Thread.sleep(60000);

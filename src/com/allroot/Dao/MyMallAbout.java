@@ -44,7 +44,7 @@ public class MyMallAbout {
 				// 判断最后同步时间与现在是否超过1小时
 				if (diffhour >= 1) {
 					// 大于1小时 重新授权
-					outpd = GetWishTokenByRefreshToken(Appkey,AppSecret,RefreshToken);
+					outpd = GetMallTokenByRefreshToken(Appkey,AppSecret,RefreshToken);
 					list.get(i).put("AccessToken", Tools.toString(outpd.get("access_token")));
 					list.get(i).put("RefreshToken", Tools.toString(outpd.get("RefreshToken")));
 				}
@@ -54,26 +54,26 @@ public class MyMallAbout {
 				//user.setShopName(Tools.toString(list.get(i).get("ShopName")));
 				user.setAccessToken(Tools.toString(list.get(i).get("AccessToken")));
 				user.setRefreshToken(Tools.toString(list.get(i).get("RefreshToken")));
-				user.setAppkey(Tools.toString(list.get(i).get("WishAppkey")));
-				user.setAppSecret(Tools.toString(list.get(i).get("WishAppSecret")));
+				user.setAppkey(Tools.toString(list.get(i).get("Appkey")));
+				user.setAppSecret(Tools.toString(list.get(i).get("AppSecret")));
 
 				
 				users.add(user);
 			}
 			//System.out.println(list);
 		} catch (Exception e) {
-			Log.errLog("[GetAllOtherWishUser[" + SqlStr + "] 出错:" + Tools.toString(e.getMessage()));
-			Log.printLog("[GetAllOtherWishUser]执行数据库出错: " + Tools.toString(e.getMessage()));
+			Log.errLog("[GetAllOtherMallUser[" + SqlStr + "] 出错:" + Tools.toString(e.getMessage()));
+			Log.printLog("[GetAllOtherMallUser]执行数据库出错: " + Tools.toString(e.getMessage()));
 		}
 		return users;
 	}
 	
 	
-	public static Map<String,Object> GetWishTokenByRefreshToken(String WishAppkey, String WishAppSecret, String RefreshToken){
+	public static Map<String,Object> GetMallTokenByRefreshToken(String Appkey, String AppSecret, String RefreshToken){
 		Map<String,Object> outpd=new HashMap<String,Object>();
 		String RequestURL = "https://mall.my.com/oauth/v2/token";
-		String PostData = "client_id=" + WishAppkey 
-						+ "&client_secret=" + WishAppSecret
+		String PostData = "client_id=" + Appkey 
+						+ "&client_secret=" + AppSecret
 						+ "&grant_type=refresh_token"
 				        + "&refresh_token=" + RefreshToken;
 		MyHttpRequest httpobj = MyHttpRequest.httpRequest(RequestURL, "POST", PostData, "UTF-8");

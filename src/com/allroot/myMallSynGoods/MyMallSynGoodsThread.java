@@ -52,7 +52,7 @@ public class MyMallSynGoodsThread implements Runnable{
 		return uLists;
 	}
 
-	public static void synJoomGoods() {
+	public static void synMyMallGoods() {
 		ArrayList<MyMallUser> uLists = null;
 		ArrayList<Thread> threadLists = new ArrayList<Thread>();
 		Integer threadCount = 10;// 默认线程数量
@@ -154,7 +154,7 @@ public class MyMallSynGoodsThread implements Runnable{
 
 	public static void main(String[] args) {
 		//同步商品
-		synJoomGoods();
+		synMyMallGoods();
 	}
 
 }

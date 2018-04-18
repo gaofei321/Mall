@@ -5,12 +5,12 @@ public class MyMallThread {
 	
 	public static void main(String[] args) {
 		//下载未发货订单
-		Thread joomSynGoodsThread=new Thread(new Runnable() {
+		Thread myMallSynGoodsThread=new Thread(new Runnable() {
 			public void run() {
-				MyMallSynGoodsThread.synJoomGoods();	
+				MyMallSynGoodsThread.synMyMallGoods();	
 			}
 		});
-		joomSynGoodsThread.start();
+		myMallSynGoodsThread.start();
 	/*	//同步售后单纠纷
 		Thread JoomSynGoodsThread=new Thread(new Runnable() {
 			public void run() {

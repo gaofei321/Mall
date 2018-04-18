@@ -11,7 +11,6 @@ import java.util.Locale;
 import java.util.Map;
 
 import com.allroot.db.ConnDB;
-import com.allroot.entity.JoomUser;
 import com.allroot.entity.MyMallUser;
 import com.allroot.tool.JSON;
 import com.allroot.tool.Log;
@@ -28,10 +27,11 @@ public class MyMallSynGoods {
 		//  System.out.println("时间：-》》》》》》"+since);
 		Map<String,String> Authorization = new HashMap<String,String>();
 		String access_token=user.getAccessToken();
-		String url="https://mall.my.com/merchant/wish/api/v2/order/get-fulfill";
-		Authorization.put("Authorization", "Bearer " + access_token);
 		String LPostData="start=0&limit=300";
-		synProcess(user,url,LPostData,Authorization);
+		String url="https://mall.my.com/merchant/wish/api/v2/order/get-fulfill?"+LPostData;
+		Authorization.put("Authorization", "Bearer " + access_token);
+		
+		synProcess(user,url,"",Authorization);
 		
 		
 	}
@@ -41,7 +41,7 @@ public class MyMallSynGoods {
 		String logs="";
 		String UID=user.getUID();
 		String suffix = user.getAliasName();//店铺简称
-		MyHttpRequest httpobj = MyHttpRequest.httpRequest(url,Authorization,"POST", LPostData, "UTF-8");
+		MyHttpRequest httpobj = MyHttpRequest.httpRequest(url,Authorization,"GET", LPostData, "UTF-8");
 		if(httpobj==null){
 			logs = "下载用户："+UID+"店铺[" + suffix + "]未发货订单失败，httpobj为null";
 			Log.printLog(logs);
@@ -106,7 +106,7 @@ public class MyMallSynGoods {
 						double order_total = Tools.toDouble(Order.get("order_total"));
 						
 						if(CUSTOM.equalsIgnoreCase("True")){
-							CUSTOM="Wish Express order";
+							CUSTOM="Mall Express order";
 						}else{
 							CUSTOM="";
 						}
@@ -136,42 +136,65 @@ public class MyMallSynGoods {
 						String street_address1 = Tools.toString(ShippingDetail.get("street_address1"));
 						String zipcode = Tools.toString(ShippingDetail.get("zipcode"));
 						
-						sql="delete from P_trade_ADT where TradeNID=(select top 1 nid from P_trade_A Where [TRANSACTIONID]='"+Tools.SetDBValue(order_id)+"' and UID='"+Tools.SetDBValue(UID)+"')"
-								+ "delete from P_Trade_A where [TRANSACTIONID]='"+Tools.SetDBValue(order_id)+"'and UID='"+Tools.SetDBValue(UID)+"'";  //删除备份表记录
+						sql="delete from P_trade_ADT where TradeNID=(select top 1 nid from P_trade_A Where suffix='"+Tools.SetDBValue(suffix)+"' and UID='"+Tools.SetDBValue(UID)+"' and ack='"+Tools.SetDBValue(order_id)+"')"
+								+ "delete from P_Trade_A where suffix='"+Tools.SetDBValue(suffix)+"'and UID='"+Tools.SetDBValue(UID)+"' and ack='"+Tools.SetDBValue(order_id)+"'";  //删除备份表记录
+						ArrayList<HashMap<String, Object>> list = null;
 						try {
 							System.out.println("删除备份表记录sql:->>>>>"+sql);
 							ConnDB.DBExcuteSQL(sql); //删除备份表记录
-							sql="if Convert(int,(select top 1 SHIPPINGMETHOD from p_trade where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+"'and UID='"+Tools.SetDBValue(UID)+"' ))=1"
-								+"	begin"
-								+"	update p_trade set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from p_trade where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' )"
-								+"	end"
-								+"	else"
-								+"	if Convert(int,(select top 1 SHIPPINGMETHOD from p_trade_b where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' ))=1"
-								+"	begin"
-								+"	update p_trade_b set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from p_trade_b where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' )"
-								+"	end"
-								+"	else"
-								+"	if Convert(int,(select top 1 SHIPPINGMETHOD from p_tradeun where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' ))=1"
-								+"	begin"
-								+"	update p_tradeun set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from p_tradeun where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' )"
-								+"	end"
-								+"	else"
-								+"	if Convert(int,(select top 1 SHIPPINGMETHOD from p_trade_his where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"'))=1"
-								+"	begin"
-								+"	update p_trade_his set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from p_trade_his where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' )"
-								+"	end"
-								+"	else"
-								+"	if Convert(int,(select top 1 SHIPPINGMETHOD from P_TradeUn_His where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"'))=1"
-								+"	begin"
-								+"	update P_TradeUn_His set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from P_TradeUn_His where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' )"
-								+"	end "// 检查附表是否存在,否则重复
+							sql=" select NID from P_Trade  where uid = '" 
+									+ Tools.SetDBValue(UID) + "' and TRANSACTIONID = '" + Tools.SetDBValue(order_id)+"' and suffix='"+Tools.SetDBValue(suffix)+"'"
+									+ " union all select NID from P_tradepack  where uid = '" 
+									+ Tools.SetDBValue(UID) + "' and TRANSACTIONID = '" + Tools.SetDBValue(order_id)+"' and suffix='"+Tools.SetDBValue(suffix)+"'"
+									+ " union all select NID from P_trade_b  where uid = '" 
+									+ Tools.SetDBValue(UID) + "' and TRANSACTIONID = '" + Tools.SetDBValue(order_id)+"' and suffix='"+Tools.SetDBValue(suffix)+ "'"
+									+ " union all select NID from P_TradeUn_His  where uid = '" 
+									+ Tools.SetDBValue(UID) + "' and TRANSACTIONID = '" + Tools.SetDBValue(order_id)+"' and suffix='"+Tools.SetDBValue(suffix)+ "'"
+									+ " union all select NID from P_tradeUn  where uid = '" 
+									+ Tools.SetDBValue(UID) + "' and TRANSACTIONID = '" + Tools.SetDBValue(order_id)+"' and suffix='"+Tools.SetDBValue(suffix)+ "'"
+									+ " union all select NID from P_trade_His where uid = '" 
+									+ Tools.SetDBValue(UID) + "' and TRANSACTIONID = '" + Tools.SetDBValue(order_id)+"' and suffix='"+Tools.SetDBValue(suffix)+ "'";
+							System.out.println("判断是否存在sql:->>>>>"+sql);
+							list = ConnDB.DBSelect(sql, true);
+							if(list.size()>0){
+								logs = "下载用户："+UID+"店铺[" + suffix + "]未发货订单失败，TRANSACTIONID:"+order_id+"数据库中已存在，不能去下载";
+								Log.printLog(logs);
+								Log.errLog(logs);
+								continue;
+							}
+							
+							
+							sql="if (select top 1 SHIPPINGMETHOD from p_trade where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+"'and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"')='1'"
+									+"	begin"
+									+"	update p_trade set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from p_trade where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"' )"
+									+"	end"
+									+"	else"
+									+"	if (select top 1 SHIPPINGMETHOD from p_trade_b where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"')='1'"
+									+"	begin"
+									+"	update p_trade_b set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from p_trade_b where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"' )"
+									+"	end"
+									+"	else"
+									+"	if (select top 1 SHIPPINGMETHOD from p_tradeun where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"')='1'"
+									+"	begin"
+									+"	update p_tradeun set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from p_tradeun where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"' )"
+									+"	end"
+									+"	else"
+									+"	if (select top 1 SHIPPINGMETHOD from p_trade_his where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"')='1'"
+									+"	begin"
+									+"	update p_trade_his set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from p_trade_his where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"' )"
+									+"	end"
+									+"	else"
+									+"	if (select top 1 SHIPPINGMETHOD from P_TradeUn_His where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"')='1'"
+									+"	begin"
+									+"	update P_TradeUn_His set SHIPPINGMETHOD=0,AdditionalCharge=0 where NID=(select top 1 NID from P_TradeUn_His where TRANSACTIONID ='"+Tools.SetDBValue(order_id)+ "' and UID='"+Tools.SetDBValue(UID)+"' and suffix='"+Tools.SetDBValue(suffix)+"' )"
+									+"	end "// 检查附表是否存在,否则重复
 								+" insert into p_trade_A (filterflag,ack,ORDERTIME,buyerid,[user],suffix,amt,SHIPPINGAMT,SHIPTONAME,SHIPTOSTREET,"
 								+ "SHIPTOSTREET2,SHIPTOCITY,SHIPTOSTATE,SHIPTOZIP,SHIPTOCOUNTRYCODE,SHIPTOCOUNTRYNAME,SHIPTOPHONENUM,currencyCode,"
 								+ "PAYMENTSTATUS,TRANSACTIONTYPE,PAYMENTTYPE,INVNUM,ADDRESSOWNER,CUSTOM,guid,TRANSACTIONID,Memo,SHIPDISCOUNT,UID) "
 								+ "values"
 								+ "(5,'"+Tools.SetDBValue(order_id)+"','"+Tools.SetDBValue(order_time)+"','"+Tools.SetDBValue(buyer_id)+"','"+Tools.SetDBValue(suffix)+"','"+Tools.SetDBValue(suffix)+"','"+Tools.SetDBValue(price*quantity+shipping)+"','"+Tools.SetDBValue(shipping)+"','"+Tools.SetDBValue(fname)+"','"+Tools.SetDBValue(street_address1)+"','"
 								+Tools.SetDBValue(street_address2)+"','"+Tools.SetDBValue(city)+"','"+Tools.SetDBValue(fstate)+"','"+Tools.SetDBValue(zipcode)+"','"+Tools.SetDBValue(country)+"',"+"isnull((select CountryEnName from b_country where  UID='"+Tools.SetDBValue(UID)+"' and CountryCode='"+Tools.SetDBValue(country)+"' ),'')"+",'"+Tools.SetDBValue(phone_number)+"','USD',"
-								+"'Completed','Wish Cart','instant','','wish'"+",'"+Tools.SetDBValue(CUSTOM)+"','"+Tools.SetDBValue(order_id)+"','"+Tools.SetDBValue(order_id)+"','"+Tools.SetDBValue(Memo)+"','"+Tools.SetDBValue(price*quantity*0.15+shipping*0.15)+"','"+Tools.SetDBValue(UID)+"')";
+								+"'Completed','Mall Cart','instant','','mall'"+",'"+Tools.SetDBValue(CUSTOM)+"','"+Tools.SetDBValue(order_id)+"','"+Tools.SetDBValue(order_id)+"','"+Tools.SetDBValue(Memo)+"','"+Tools.SetDBValue(price*quantity*0.15+shipping*0.15)+"','"+Tools.SetDBValue(UID)+"')";
 							
 							System.out.println("主表sql:->>>>>"+sql);
 							
@@ -183,7 +206,7 @@ public class MyMallSynGoods {
 									+ "values"
 									+ "(@fTradeNID,'"+Tools.SetDBValue(product_name)+"','','USD','"+Tools.SetDBValue(shipping)+"','"+Tools.SetDBValue(quantity)+"','','"+Tools.SetDBValue(price*quantity)+"','"+Tools.SetDBValue(product_id)+"','"
 									+Tools.SetDBValue(transaction_id)+"','"+Tools.SetDBValue(sku)+"','"+Tools.SetDBValue(sku)+"','"+Tools.SetDBValue(price*quantity*0.15+shipping*0.15)+"','"+Tools.SetDBValue(UID)+"')"
-									+" exec P_XS_TradeFromJoom '" + Tools.SetDBValue(UID) + "',@fTradeNID";  
+									+" exec P_XS_TradeFromMall '" + Tools.SetDBValue(UID) + "',@fTradeNID";  
 							
 							System.out.println("细表sql:->>>>>"+sql);
 							
@@ -198,7 +221,14 @@ public class MyMallSynGoods {
 						
 					}	
 				}
-				
+				String updateSql="update S_SyncInfoMall set SyncSuccessTime=GETDATE() where AliasName='"+Tools.SetDBValue(suffix)+"' and UID='"+Tools.SetDBValue(UID)+"'";
+				try {
+					ConnDB.executeUpdate(updateSql,false);
+				} catch (Exception e) {
+					logs = "下载用户："+UID+"店铺[" + suffix + "]更新最后同步时间失败";
+					Log.printLog(logs);
+					Log.errLog(logs);
+				}
 				
 			}else{
 				logs = "下载用户："+UID+"店铺[" + suffix + "]未发货订单失败，授权失败："+(String) jsonobj.get("message");
@@ -206,9 +236,9 @@ public class MyMallSynGoods {
 				Log.errLog(logs);
 			}			
 			if(!next.isEmpty()){
-				url=next.substring(0, next.indexOf("?"));
-				LPostData=next.substring(next.indexOf("?")+1)+LPostData.substring(LPostData.indexOf("&"));
-				synProcess(user,url,LPostData);
+				/*url=next.substring(0, next.indexOf("?"));
+				LPostData=next.substring(next.indexOf("?")+1)+LPostData.substring(LPostData.indexOf("&"));*/
+				synProcess(user,next,"",Authorization);
 			}
 		}
 		

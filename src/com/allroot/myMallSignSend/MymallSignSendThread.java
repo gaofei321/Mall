@@ -1,4 +1,4 @@
-package joomSignSend;
+package com.allroot.myMallSignSend;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -7,46 +7,44 @@ import java.util.Date;
 import java.util.List;
 
 import com.allroot.Dao.MyMallAbout;
-import com.allroot.entity.JoomUser;
-import com.allroot.myMallSynGoods.MyMallSynGoods;
-import com.allroot.myMallSynGoods.MyMallSynGoodsThread;
+import com.allroot.entity.MyMallUser;
 import com.allroot.tool.Log;
 import com.allroot.tool.Tools;
 
-public class JoomSignSendThread implements Runnable{
+public class MymallSignSendThread implements Runnable{
 
-	private List<JoomUser> synList;
+	private List<MyMallUser> synList;
 	private static Boolean isDebug;
 	private final static String jobName = "[同步Joom]";
 	public static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-	public synchronized void SetSynList(ArrayList<JoomUser> arrayList) {
+	public synchronized void SetSynList(ArrayList<MyMallUser> arrayList) {
 		this.synList = Collections.synchronizedList(arrayList); // 创建同步的对象
 	}
 
-	public JoomSignSendThread() {
+	public MymallSignSendThread() {
 		super();
 	}
 
-	private List<JoomUser> getSynList() {
+	private List<MyMallUser> getSynList() {
 		return synList;
 	}
 
-	public synchronized JoomUser getSynUser() {
+	public synchronized MyMallUser getSynUser() {
 		// 线程安全同步
 		if (getSynList() == null || getSynList().size() == 0) {
 			return null;
 		}
-		JoomUser user = getSynList().get(0);
+		MyMallUser user = getSynList().get(0);
 		getSynList().remove(0);
 		return user;
 	}
 
 	// ebayMessage用户列表
-	private static ArrayList<JoomUser> getAllSynAccountList() {
-		ArrayList<JoomUser> uLists = null;
+	private static ArrayList<MyMallUser> getAllSynAccountList() {
+		ArrayList<MyMallUser> uLists = null;
 		try {
-			uLists = MyMallAbout.GetAllOtherJoomUser();
+			uLists = MyMallAbout.GetAllOtherMyMallUser();
 		} catch (Exception e1) {
 			Log.printLog(jobName + "取待同步的店列表出错:" + Tools.toString(e1.getMessage()));
 			uLists = null;
@@ -54,12 +52,12 @@ public class JoomSignSendThread implements Runnable{
 		return uLists;
 	}
 
-	public static void synJoomGoods() {
-		ArrayList<JoomUser> uLists = null;
+	public static void signSend() {
+		ArrayList<MyMallUser> uLists = null;
 		ArrayList<Thread> threadLists = new ArrayList<Thread>();
 		Integer threadCount = 10;// 默认线程数量
 		Integer threadRunPreiod = 3;// 线程启动时间间隔
-		JoomSignSendThread getThread = new JoomSignSendThread();
+		MymallSignSendThread getThread = new MymallSignSendThread();
 		Boolean isFinish = true;
 
 		isDebug = true;
@@ -140,9 +138,9 @@ public class JoomSignSendThread implements Runnable{
 	@Override
 	public void run() {
 		// 获取user
-		JoomUser user = new JoomUser();
+		MyMallUser user = new MyMallUser();
 		System.out.println("开始同步下载->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-		JoomSignSend pro = new JoomSignSend();
+		MyMallSignSend pro = new MyMallSignSend();
 		while (true) {
 			user = getSynUser();			
 			if (user == null) {
@@ -156,7 +154,7 @@ public class JoomSignSendThread implements Runnable{
 
 	public static void main(String[] args) {
 		//同步商品
-		synJoomGoods();
+		signSend();
 	}
 
 	
